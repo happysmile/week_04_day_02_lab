@@ -1,0 +1,64 @@
+body {
+	background-color: white;
+  margin: 0;
+	padding: 0;
+	font: 67.5% Verdana, Arial, serif;
+	color: darkblue;
+  text-align: center;
+}
+
+hr {
+  border: 1px lightblue solid
+}
+
+h1 {
+	font-size: 1.8em;
+  margin-bottom: 3em;
+}
+
+h2 {
+	font-size: 1.6em;
+  margin-bottom: 2em;
+}
+
+p, li, label, input {
+	font-size: 1.2em;
+	line-height: 1.5;
+}
+
+a {
+  color: purple;
+}
+
+img {
+	border-style: none;
+}
+
+ul {
+ margin: 0;
+ padding: 0;
+}
+
+nav {
+  border-bottom: 1px red solid;
+  margin-bottom: 2em;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  margin: 1em;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 1em;
+}
+
+input {
+  border: 1px darkblue solid;
+}
+
+form {
+  margin-bottom: 1em;
+}

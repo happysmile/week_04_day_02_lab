@@ -1,0 +1,25 @@
+<h2>Update order</h2>
+
+<form action="/pizza-orders/<%=@order.id %>" method="post">
+  <fieldset>
+    <label for="first-name">First name:</label>
+    <input type="text" id="first-name" name="first_name" value="<%=@order.first_name %>">
+  </fieldset>
+  <fieldset>
+    <label for="last-name">Last name:</label>
+    <input type="text" id="last-name" name="last_name" value="<%=@order.last_name %>">
+  </fieldset>
+  <fieldset>
+    <label for="topping">Select a pizza:</label>
+    <select id="topping" name="topping"><%=@order.topping %>
+      <option value="Margherita" <%if(@order.topping == "Margherita")%>selected<% end %>>Margherita</option>
+      <option value="Pepperoni" <%if(@order.topping == "Pepperoni")%>selected<% end %>>Pepperoni</option>
+      <option value="Calzone" <%if(@order.topping == "Calzone")%>selected<% end %>>Calzone</option>
+    </select>
+  </fieldset>
+  <fieldset>
+    <label for="quantity">Quantity</label>
+    <input type="number" id="quantity" name="quantity" value="<%=@order.quantity %>">
+  </fieldset>
+  <input type="submit" value="UPDATE">
+</form>
