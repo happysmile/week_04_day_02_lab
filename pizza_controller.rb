@@ -47,6 +47,12 @@ end
 # then update the pizza order
 
 post '/pizza-orders/:id' do
+  # cool solution as following:
+  # PizzaOrder.new(params).update()
+  # redirect '/pizza-orders'
+  # Attention params is a combination of
+  # params['id'] from url (GET) and
+  # the other params from form (POST)
   order_id = params[:id]
   @order = PizzaOrder.find(order_id)
   @order.first_name = params['first_name']
